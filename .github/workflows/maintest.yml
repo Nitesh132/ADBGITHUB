@@ -137,7 +137,7 @@ jobs:
     env:
       resourceGroupName: '${{ github.event.inputs.RESOURCE_GROUP }}-Dev'
       databricksWorkspaceName: '${{ github.event.inputs.WORKSPACE_NAME }}-Dev'
-      keyVaultName: '${{ github.event.inputs.KEY_VAULT_NAME }}-Dev'
+      
 
     steps:
     # Show the environment variables for debugging
