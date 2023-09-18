@@ -201,7 +201,7 @@ jobs:
    
     # Deploy Databricks Notebooks
     - name: Deploy Databricks Notebooks
-      if: ${{ github.event.inputs.MODE == 'Databricks' }}
+  #    if: ${{ github.event.inputs.MODE == 'Databricks' }}
       run: |
         cd "$GITHUB_WORKSPACE/${{ github.event.inputs.GIT_NOTEBOOK_PATH }}"
         chmod +x $GITHUB_WORKSPACE/deployment-scripts/deploy-notebooks.sh
