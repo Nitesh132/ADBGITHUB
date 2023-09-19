@@ -14,7 +14,7 @@
 data = spark.read.csv("/databricks-datasets/samples/population-vs-price/data_geo.csv", header="true", inferSchema="true")
 data.cache()  # Cache data for faster reuse
 data.count()
-
+jhgjbkjbk
 # COMMAND ----------
 
 display(data)
