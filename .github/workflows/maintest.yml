@@ -92,12 +92,6 @@ jobs:
         name: 'ARM-Templates'
         path: '${{ github.workspace }}/ARM-Templates'
 
-    # Publish Artifact: Databricks-Clusters
-    - name: 'Publish Artifact: Databricks-Clusters' 
-      uses: actions/upload-artifact@v2
-      with:
-        name: 'clusters'
-        path: '${{ github.workspace }}/clusters'
 
     # Publish Artifact: Databricks-Notebooks
     - name: 'Publish Artifact: Databricks-Notebooks' 
@@ -106,12 +100,7 @@ jobs:
         name: 'notebooks'
         path: '${{ github.workspace }}/notebooks'
 
-    # Publish Artifact: Databricks-Jobs
-    - name: 'Publish Artifact: Databricks-Jobs' 
-      uses: actions/upload-artifact@v2
-      with:
-        name: 'jobs'
-        path: '${{ github.workspace }}/jobs'
+   
 
     # Publish Artifact: Databricks-Init-Scripts
     - name: 'Publish Artifact: Databricks-Init-Scripts' 
